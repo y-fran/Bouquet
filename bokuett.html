@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Gambar dan Teks</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("bckgrndd.jpg"); 
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(
+          243,
+          243,
+          243,
+          0.9
+        ); /* so bakso dengan url amikom cuy */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      p {
+        text-align: center;
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      .about-us {
+        background-color: #c3c3c3;
+        padding: 20px;
+        margin-top: 40px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-us img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      .gallery-item,
+      .review-item {
+        background-color: #d2d2d2;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      .gallery-item:hover,
+      .review-item:hover {
+        transform: scale(1.05);
+      }
+      .gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .text-container {
+        padding: 15px;
+      }
+      .text-container h2 {
+        margin: 0;
+        color: #686bae;
+        font-size: 1.5em;
+      }
+      .text-container p {
+        margin: 10px 0 0;
+        color: #666;
+      }
+      .reviews {
+        margin-top: 40px;
+        text-align: center;
+      }
+      .reviews h2 {
+        color: #262626;
+        margin-bottom: 20px;
+      }
+      .review-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        margin: 0 auto;
+      }
+      .review-item p {
+        color: #564f9a;
+        margin: 0;
+      }
+      .review-item .author {
+        margin-top: 10px;
+        font-style: italic;
+        color: #696969;
+      }
+      .contact-us {
+        background-color: #bdbdbd;
+        padding: 20px;
+        margin-top: 40px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="about-us">
+        <img src="bckgrndd.jpg" alt="halaman about us gesyak" />
+        <h2>About us</h2>
+        <p>
+          Bouquet Terbaikkk.. Siap untuk memberikan kebahagiaan untuk teman dan
+          keluarga "Butuh hadiah untuk diberikan kepada orang terdekat anda?
+          BouquetKH siap untuk memberikan kemewahan dan cita rasa khas dalam
+          setiap bentuknya" BARU, Nikmati paket bouquet full bunga hanya 10
+          ribuan untuk keluarga dan teman Kejutan Manis yang Tak Terlupakan -
+          Temukan Kaha.Bouquet untuk Setiap Kesempatan. Hadiah Lezat yang
+          Memukau! Berikan Kejutan dengan Bouquet Snack Kreatifdff!
+        </p>
+      </div>
+
+      <h1>Latest products</h1>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="Loli-crochet.jpg" alt="Bouquet 1" />
+          <div class="text-container">
+            <h2>Loli-crochet</h2>
+            <p>
+              Bouquet dengan paduan bunga dan boneka yang lucu membuat suasana
+              menjadi asik.
+            </p>
+            <p>Rp 200.000</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="romantic.jpg" alt="Bouquet 2" />
+          <div class="text-container">
+            <h2>Romantic-roses</h2>
+            <p>
+              Bouquet dengan pilihan yang tepat untuk diberikan kepasangan anda,
+              dibalut dengan bunga yang mempunyai warna yang fantastis membuat
+              pasangan anda menjadi senang.
+            </p>
+            <p>Rp 180.000</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="yellow.jpg" alt="Bouquet 3" />
+          <div class="text-container">
+            <h2>Luxury-yellow</h2>
+            <p>
+              Luxury-yellow terlihat menarik dan menawan, membuat orang yang
+              melihatnya menjadi terpana akan keanggunannya.
+            </p>
+            <p>Rp 80.000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <h2>Costumer's review</h2>
+        <div class="gallery">
+          <div class="review-item">
+            <div class="text-container">
+              <p>
+                Saya sangat terkesan dengan kualitas dari produk bouquet ini.
+              </p>
+              <div class="author">- Geri mapan</div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="text-container">
+              <p>Sangat senang ketika berkunjung!</p>
+              <div class="author">- Fran Kaha</div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="text-container">
+              <p>
+                Saya sangat suka dengan barang yang ditawarkan oleh bouquet
+                kaha.
+              </p>
+              <div class="author">- Gideon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-us">
+        <h2>contact-us</h2>
+        <p>
+          Anda bisa menghubungi kami jika ada yang ingin ditanyakan, silakan
+          kirim email ke contact gerimapan@gmail.com atau hubungi kami di
+          +62-1393-2981. Kami akan dengan senang hati membantu Anda.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
